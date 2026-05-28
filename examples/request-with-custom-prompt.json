@@ -1,0 +1,6 @@
+{
+  "provider": "gemini",
+  "model": "gemini-2.5-flash",
+  "systemPrompt": "Paste your custom system prompt here. It should define endpoints, status codes, and database tool usage rules.",
+  "message": "Create supplier medicine for supplier s1, medicine m1, Panadol, price 50"
+}

@@ -1,0 +1,49 @@
+{
+  "name": "promptapi-runtime",
+  "version": "0.1.0",
+  "description": "System-prompt-defined LLM-as-API server with tool calling, provider adapters, and Prisma database tools.",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx src/server/index.ts",
+    "build": "tsc -p tsconfig.json",
+    "start": "node dist/server/index.js",
+    "prisma:generate": "prisma generate",
+    "prisma:migrate": "prisma migrate dev --name init",
+    "prisma:studio": "prisma studio",
+    "daily:test": "tsx scripts/run-daily-tests.ts",
+    "lint:types": "tsc --noEmit"
+  },
+  "keywords": [
+    "llm",
+    "api-server",
+    "tool-calling",
+    "function-calling",
+    "prisma",
+    "gemini",
+    "openai",
+    "anthropic",
+    "mistral"
+  ],
+  "author": "Loai Abdalslam <loaiabdalslam@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@anthropic-ai/sdk": "latest",
+    "@google/genai": "latest",
+    "@mistralai/mistralai": "latest",
+    "@prisma/client": "latest",
+    "cors": "latest",
+    "dotenv": "latest",
+    "express": "latest",
+    "openai": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/cors": "latest",
+    "@types/express": "latest",
+    "@types/node": "latest",
+    "prisma": "latest",
+    "tsx": "latest",
+    "typescript": "latest"
+  }
+}
