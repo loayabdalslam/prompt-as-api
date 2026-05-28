@@ -272,6 +272,10 @@ Before production, add:
 
 ---
 
+## Citation
+
+Abdalslam, L. (2026). **LLM as API Server: A System-Prompt-Defined Runtime for Natural-Language Endpoint Routing, Tool Calling, and Database-Backed Execution**. SSRN Working Paper. https://ssrn.com/abstract=...
+
 ## License
 
 MIT
